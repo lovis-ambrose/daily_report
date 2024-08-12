@@ -5,11 +5,11 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # Email account credentials
-EMAIL_ADDRESS = 'lovisambrose212@gmail.com'
-EMAIL_PASSWORD = 'sacx lkzl crvd ssmx'
+EMAIL_ADDRESS = 'email@example.com'
+EMAIL_PASSWORD = 'app password'
 
 # Recipient's email address
-TO_ADDRESS = 'mutungiambrozio212@gmail.com'
+TO_ADDRESS = 'email@example.com'
 
 # Create email content
 def create_email():
@@ -86,7 +86,7 @@ def daily_report():
     send_email(subject, body)
 
 # Schedule the task to run daily at a specific time
-schedule.every().day.at("15:09").do(daily_report)
+schedule.every().day.at("18:00").do(daily_report)
 
 # Run the scheduled tasks
 while True:
